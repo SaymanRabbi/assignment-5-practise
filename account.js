@@ -33,6 +33,7 @@ depositButton.addEventListener('click',function(e){
 })
 // === withdraw====
 withdrawButton.addEventListener('click',function(e){
+    let withdrawNew = withdraw.innerText;
     let balanceNew2 = parseFloat(balance.innerText)
     if((withdrawInput.value === '') || isNaN(withdrawInput.value)){
         returne2.innerText = "Please Withdraw Geterr a Dollar"
@@ -50,8 +51,7 @@ withdrawButton.addEventListener('click',function(e){
         returne2.style.marginBottom = "10px"
        }
        else{
-           withdraw.innerText = withdrawInput.value;
-           console.log(parseFloat(withdrawInput.value))
+           withdraw.innerText = parseFloat(withdrawNew)+  parseFloat(withdrawInput.value);
            balance.innerText = balanceNew2 - parseFloat(withdrawInput.value);
            withdrawInput.value = '';
        }
