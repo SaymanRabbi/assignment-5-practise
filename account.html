@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome Chief</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h2>Welcome Bro</h2>
+<body class="bg-slate-400">
+    <h2 class="text-5xl text-center mt-16 mb-8">Lets Gets Some <span class="text-rose-700 font-semibold">Mooooooney</span>!!!!</h2>
+    <section>
+        <div class="grid grid-cols-3 w-3/4 mx-auto gap-5 mb-9">
+             <div class="p-10 bg-emerald-300 rounded">
+                <h2 class="text-3xl font-semibold text-white">Deposit</h2>
+                  <h3 class="text-4xl font-semibold text-white">$<span id="Deposit">00</span></h3>
+             </div>
+             <div class="p-10 bg-amber-400 rounded">
+                <h2 class="text-3xl font-semibold text-white">Withdraw</h2>
+                  <h3 class="text-4xl font-semibold text-white">$<span id="Withdraw">00</span></h3>
+             </div>
+             <div class="p-10 bg-orange-400 rounded">
+                <h2 class="text-3xl font-semibold text-white">Balance</h2>
+                  <h3  class="text-4xl font-semibold text-white">$<span id="Balance">1200</span></h3>
+             </div>
+           
+             
+        </div>
+        <div class="grid grid-cols-2 w-3/4 mx-auto gap-5">
+            <div class="p-10 bg-lime-300 rounded">
+               <h2 class="text-3xl font-semibold text-white mb-3">Please Deposit</h2>
+               <p id="returne"></p>
+                <input id="Deposit-input" type="text" placeholder="Please Deposit Your Dollar" class="w-full py-1 px-2 focus:outline-none rounded block">
+                <button id="Deposit-button" class="py-2 px-5 mt-5 text-white text-xl bg-red-600 rounded">Deposit</button>
+            </div>
+            <div class="p-10 bg-indigo-500 rounded">
+                <h2 class="text-3xl font-semibold text-white mb-3">Please Withdraw</h2>
+                <p id="returne2"></p>
+                 <input id="Withdraw-input" type="text" placeholder="Please Withdraw Your Dollar" class="w-full py-1 px-2 focus:outline-none rounded block">
+                 <button id="Withdraw-button" class="py-2 px-5 mt-5 text-white text-xl bg-red-600 rounded">Withdraw</button>
+             </div>
+           
+          
+            
+       </div>
+
+
+    </section>
+    <script src="./account.js"></script>
 </body>
 </html>
