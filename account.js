@@ -14,12 +14,12 @@ depositButton.addEventListener('click',function(e){
     let balanceNew = parseFloat(balance.innerText)
     let depositValue =depositInput.value;
     if((depositValue === '') || isNaN(depositValue)){
-     returne.innerText = "Please Input some Value"
+     returne.innerText = "Please Deposit A dollar"
      returne.style.color="red";
      returne.style.marginBottom = "10px"
     }
     else if (depositValue<0){
-        returne.innerText = "Please Input some positive Value"
+        returne.innerText = "Please Deposit Geterr Than 0 Dollar  "
         returne.style.color="red";
         returne.style.marginBottom = "10px"
     }
@@ -35,17 +35,17 @@ depositButton.addEventListener('click',function(e){
 withdrawButton.addEventListener('click',function(e){
     let balanceNew2 = parseFloat(balance.innerText)
     if((withdrawInput.value === '') || isNaN(withdrawInput.value)){
-        returne2.innerText = "Please Input some Value"
+        returne2.innerText = "Please Withdraw Geterr a Dollar"
         returne2.style.color="red";
         returne2.style.marginBottom = "10px"
        }
        else if(withdrawInput.value<0){
-        returne2.innerText = "Please Input some positive Value"
+        returne2.innerText = "Please Withdraw Geterr Than 0 Dollar"
         returne2.style.color="red";
         returne2.style.marginBottom = "10px"
        }
        else if(withdrawInput.value>balanceNew2){
-        returne2.innerText = "Please Input Less Than Blance"
+        returne2.innerText = "Not Available Balance Your Account"
         returne2.style.color="red";
         returne2.style.marginBottom = "10px"
        }
