@@ -18,6 +18,11 @@ depositButton.addEventListener('click',function(e){
      returne.style.color="red";
      returne.style.marginBottom = "10px"
     }
+    else if (depositValue<0){
+        returne.innerText = "Please Input some positive Value"
+        returne.style.color="red";
+        returne.style.marginBottom = "10px"
+    }
     else{
         depositNew = parseFloat(deposit.innerText);
         deposit.innerText = depositNew + parseFloat(depositValue);
@@ -31,6 +36,16 @@ withdrawButton.addEventListener('click',function(e){
     let balanceNew2 = parseFloat(balance.innerText)
     if((withdrawInput.value === '') || isNaN(withdrawInput.value)){
         returne2.innerText = "Please Input some Value"
+        returne2.style.color="red";
+        returne2.style.marginBottom = "10px"
+       }
+       else if(withdrawInput.value<0){
+        returne2.innerText = "Please Input some positive Value"
+        returne2.style.color="red";
+        returne2.style.marginBottom = "10px"
+       }
+       else if(withdrawInput.value>balanceNew2){
+        returne2.innerText = "Please Input Less Than Blance"
         returne2.style.color="red";
         returne2.style.marginBottom = "10px"
        }
